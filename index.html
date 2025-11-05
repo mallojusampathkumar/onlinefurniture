@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Father's Carpentry Services</title>
+    <title>Heritage Woodcraft - Custom Carpentry Services</title>
     
     <style>
         /* General Styles */
@@ -12,6 +12,7 @@
             --secondary-color: #2F4F4F; /* Dark slate gray */
             --light-gray: #f4f4f4;
             --white: #ffffff;
+            --dark-text: #333;
         }
 
         * {
@@ -24,7 +25,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             background-color: var(--light-gray);
-            color: #333;
+            color: var(--dark-text);
         }
 
         .container {
@@ -49,9 +50,22 @@
             align-items: center;
         }
 
-        .navbar .logo {
+        .navbar .brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .brand img {
+            height: 40px; /* Adjust logo size */
+            margin-right: 10px;
+            border-radius: 5px; /* Optional: if your logo is square */
+        }
+
+        .navbar .brand .logo-text {
             font-size: 1.5rem;
             font-weight: bold;
+            color: var(--white);
+            text-decoration: none; /* In case it becomes a link */
         }
 
         .navbar ul {
@@ -67,11 +81,16 @@
             color: var(--white);
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: var(--primary-color);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x600/?carpentry,workshop') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x600/?carpentry,workshop,woodworking') no-repeat center center/cover;
             color: var(--white);
             height: 60vh;
             display: flex;
@@ -319,7 +338,9 @@
 
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Your Father's Name</div>
+            <div class="brand">
+                <a href="#" class="logo-text">Heritage Woodcraft</a>
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -329,8 +350,8 @@
     </nav>
 
     <header class="hero" id="home">
-        <h1>Quality Woodwork & Custom Carpentry</h1>
-        <p>Crafting your vision with precision and care for over 20 years.</p>
+        <h1>Exquisite Custom Woodwork & Carpentry</h1>
+        <p>Crafting your vision with precision and passion. Where tradition meets modern design.</p>
     </header>
 
     <main>
@@ -341,43 +362,43 @@
                 <h3 class="category-header">Custom Furniture</h3>
                 <div class="service-grid">
                     <div class="service-card">
-                        <img src="https://source.unsplash.com/400x300/?wood,table" alt="Custom wooden table">
+                        <img src="https://source.unsplash.com/400x300/?wooden,table,dining" alt="Custom wooden dining table">
                         <div class="service-card-content">
                             <h4>Wooden Tables</h4>
-                            <p>Custom-built dining tables, coffee tables, and study desks designed to fit your space perfectly.</p>
+                            <p>Hand-crafted dining tables, coffee tables, and study desks designed to fit your space perfectly and last generations.</p>
                             <p class="guarantee"><strong>Guarantee:</strong> 3-Year Structural Warranty</p>
                             <button class="quote-btn" 
                                     data-service="Wooden Tables" 
-                                    data-contact="Contact <strong>Mr. Kumar</strong> at <strong>(555) 111-2222</strong>" 
+                                    data-contact="Contact <strong>Mr. Kumar</strong> at <strong>(555) 111-2222</strong> or email <a href='mailto:kumar@heritagewoodcraft.com'>kumar@heritagewoodcraft.com</a>" 
                                     data-warranty="3-Year Structural Warranty">
                                 Get Quote
                             </button>
                         </div>
                     </div>
                     <div class="service-card">
-                        <img src="https://source.unsplash.com/400x300/?wood,bed" alt="Custom wooden bed frame">
+                        <img src="https://source.unsplash.com/400x300/?wooden,bed,bedroom" alt="Custom wooden bed frame">
                         <div class="service-card-content">
                             <h4>Bed Frames</h4>
-                            <p>Solid wood bed frames with custom headboards and storage options (drawers, etc.).</p>
+                            <p>Solid wood bed frames with custom headboards, integrated storage, and bespoke designs for ultimate comfort and style.</p>
                             <p class="guarantee"><strong>Guarantee:</strong> 5-Year Frame Warranty</p>
                             <button class="quote-btn" 
                                     data-service="Bed Frames" 
-                                    data-contact="Contact <strong>Mr. Ashok</strong> at <strong>(555) 222-3333</strong>" 
+                                    data-contact="Contact <strong>Mr. Ashok</strong> at <strong>(555) 222-3333</strong> or email <a href='mailto:ashok@heritagewoodcraft.com'>ashok@heritagewoodcraft.com</a>" 
                                     data-warranty="5-Year Frame Warranty">
                                 Get Quote
                             </button>
                         </div>
                     </div>
                     <div class="service-card">
-                        <img src="https://source.unsplash.com/400x300/?wood,chair" alt="Custom wooden chair">
+                        <img src="https://source.unsplash.com/400x300/?wooden,chair,bench" alt="Custom wooden chair or bench">
                         <div class="service-card-content">
                             <h4>Chairs & Benches</h4>
-                            <p>Hand-crafted dining chairs, lounge chairs, and benches that are built to last.</p>
-                            <p class="guarantee"><strong>Guarantee:</strong> 2-Year Warranty</p>
+                            <p>Ergonomic and aesthetically pleasing dining chairs, lounge chairs, and benches, built for durability and comfort.</p>
+                            <p class="guarantee"><strong>Guarantee:</strong> 2-Year Craftsmanship Warranty</p>
                             <button class="quote-btn" 
                                     data-service="Chairs & Benches" 
-                                    data-contact="Contact <strong>Mr. Kumar</strong> at <strong>(555) 111-2222</strong>" 
-                                    data-warranty="2-Year Warranty">
+                                    data-contact="Contact <strong>Mr. Kumar</strong> at <strong>(555) 111-2222</strong> or email <a href='mailto:kumar@heritagewoodcraft.com'>kumar@heritagewoodcraft.com</a>" 
+                                    data-warranty="2-Year Craftsmanship Warranty">
                                 Get Quote
                             </button>
                         </div>
@@ -387,61 +408,89 @@
                 <h3 class="category-header">Storage & Cupboards</h3>
                 <div class="service-grid">
                     <div class="service-card">
-                        <img src="https://source.unsplash.com/400x300/?wood,wardrobe" alt="Custom wooden wardrobe">
+                        <img src="https://source.unsplash.com/400x300/?wooden,wardrobe,closet" alt="Custom wooden wardrobe">
                         <div class="service-card-content">
                             <h4>Wardrobes & Cupboards</h4>
-                            <p>Floor-to-ceiling wardrobes and custom cupboards with internal layouts to suit your needs.</p>
+                            <p>From built-in wardrobes to freestanding cupboards, we design intelligent storage solutions tailored to your space and style.</p>
                             <p class="guarantee"><strong>Guarantee:</strong> 5-Year Hardware & Fitting Warranty</p>
                             <button class="quote-btn" 
                                     data-service="Wardrobes & Cupboards" 
-                                    data-contact="Contact <strong>Mr. Rajesh</strong> at <strong>(555) 444-5555</strong>" 
+                                    data-contact="Contact <strong>Mr. Rajesh</strong> at <strong>(555) 444-5555</strong> or email <a href='mailto:rajesh@heritagewoodcraft.com'>rajesh@heritagewoodcraft.com</a>" 
                                     data-warranty="5-Year Hardware & Fitting Warranty">
                                 Get Quote
                             </button>
                         </div>
                     </div>
                     <div class="service-card">
-                        <img src="https://source.unsplash.com/400x300/?wood,tv-unit" alt="Custom wooden TV unit">
+                        <img src="https://source.unsplash.com/400x300/?wooden,shelving,bookshelf" alt="Custom wooden shelving unit">
+                        <div class="service-card-content">
+                            <h4>Shelving & Bookcases</h4>
+                            <p>Beautifully crafted shelves and bookcases that organize your space while enhancing your interior décor.</p>
+                            <p class="guarantee"><strong>Guarantee:</strong> 2-Year Structure Warranty</p>
+                            <button class="quote-btn" 
+                                    data-service="Shelving & Bookcases" 
+                                    data-contact="Contact <strong>Mr. Ashok</strong> at <strong>(555) 222-3333</strong> or email <a href='mailto:ashok@heritagewoodcraft.com'>ashok@heritagewoodcraft.com</a>" 
+                                    data-warranty="2-Year Structure Warranty">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://source.unsplash.com/400x300/?wooden,tvunit,entertainment" alt="Custom wooden TV unit">
                         <div class="service-card-content">
                             <h4>TV & Media Units</h4>
-                            <p>Sleek and functional media units with smart storage solutions for all your devices.</p>
-                            <p class="guarantee"><strong>Guarantee:</strong> 2-Year Warranty</p>
+                            <p>Sleek and functional media units with smart storage solutions for all your devices, designed for modern living.</p>
+                            <p class="guarantee"><strong>Guarantee:</strong> 3-Year Craftsmanship Warranty</p>
                             <button class="quote-btn" 
                                     data-service="TV & Media Units" 
-                                    data-contact="Contact <strong>Mr. Ashok</strong> at <strong>(555) 222-3333</strong>" 
-                                    data-warranty="2-Year Warranty">
+                                    data-contact="Contact <strong>Mr. Ashok</strong> at <strong>(555) 222-3333</strong> or email <a href='mailto:ashok@heritagewoodcraft.com'>ashok@heritagewoodcraft.com</a>" 
+                                    data-warranty="3-Year Craftsmanship Warranty">
                                 Get Quote
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="category-header">Custom Installations</h3>
+                <h3 class="category-header">Architectural & Custom Installations</h3>
                 <div class="service-grid">
                     <div class="service-card">
-                        <img src="https://source.unsplash.com/400x300/?wood,kitchen" alt="Custom modular kitchen">
+                        <img src="https://source.unsplash.com/400x300/?wooden,kitchen,cabinets" alt="Custom modular kitchen">
                         <div class="service-card-content">
                             <h4>Modular Kitchens</h4>
-                            <p>Complete design and installation of modular kitchen cabinets, counters, and storage.</p>
+                            <p>Complete design and installation of bespoke modular kitchen cabinets, counters, and storage, blending beauty with functionality.</p>
                             <p class="guarantee"><strong>Guarantee:</strong> 10-Year Full-Site Warranty</p>
                             <button class="quote-btn" 
                                     data-service="Modular Kitchens" 
-                                    data-contact="Contact <strong>Mr. [Father's Name] (Specialist)</strong> at <strong>(555) 999-0000</strong>" 
+                                    data-contact="Contact <strong>Mr. [Father's Name] (Specialist)</strong> at <strong>(555) 999-0000</strong> or email <a href='mailto:senior@heritagewoodcraft.com'>senior@heritagewoodcraft.com</a>" 
                                     data-warranty="10-Year Full-Site Warranty">
                                 Get Quote
                             </button>
                         </div>
                     </div>
                     <div class="service-card">
-                        <img src="https://source.unsplash.com/400x300/?wood,door" alt="Custom wooden door">
+                        <img src="https://source.unsplash.com/400x300/?wooden,door,window" alt="Custom wooden door">
                         <div class="service-card-content">
                             <h4>Doors & Window Frames</h4>
-                            <p>Solid wood doors and window frames for a classic look and robust security.</p>
+                            <p>Exquisitely crafted solid wood doors and window frames for a classic look, robust security, and lasting appeal.</p>
                             <p class="guarantee"><strong>Guarantee:</strong> 5-Year Anti-Warp Warranty</p>
                             <button class="quote-btn" 
                                     data-service="Doors & Window Frames" 
-                                    data-contact="Contact <strong>Mr. Rajesh</strong> at <strong>(555) 444-5555</strong>" 
+                                    data-contact="Contact <strong>Mr. Rajesh</strong> at <strong>(555) 444-5555</strong> or email <a href='mailto:rajesh@heritagewoodcraft.com'>rajesh@heritagewoodcraft.com</a>" 
                                     data-warranty="5-Year Anti-Warp Warranty">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://source.unsplash.com/400x300/?wooden,paneling,interior" alt="Custom wood paneling">
+                        <div class="service-card-content">
+                            <h4>Interior Wood Paneling</h4>
+                            <p>Add warmth and sophistication to your interiors with custom wood paneling and decorative wall features.</p>
+                            <p class="guarantee"><strong>Guarantee:</strong> 3-Year Installation Warranty</p>
+                            <button class="quote-btn" 
+                                    data-service="Interior Wood Paneling" 
+                                    data-contact="Contact <strong>Mr. Rajesh</strong> at <strong>(555) 444-5555</strong> or email <a href='mailto:rajesh@heritagewoodcraft.com'>rajesh@heritagewoodcraft.com</a>" 
+                                    data-warranty="3-Year Installation Warranty">
                                 Get Quote
                             </button>
                         </div>
@@ -475,12 +524,14 @@
                             <option value="wardrobe">Wardrobes/Cupboards</option>
                             <option value="kitchen">Modular Kitchen</option>
                             <option value="door">Doors & Windows</option>
-                            <option value="other">Other</option>
+                            <option value="shelving">Shelving & Bookcases</option>
+                            <option value="tv-unit">TV & Media Units</option>
+                            <option value="other">Other Custom Woodwork</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="description">Describe Your Requirement</label>
-                        <textarea id="description" name="description" placeholder="Please include details like dimensions, wood type preference, and your location..." required></textarea>
+                        <textarea id="description" name="description" placeholder="Please include details like dimensions, preferred wood type, finish, and your location..." required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Submit Request</button>
                 </form>
@@ -490,8 +541,8 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 [Your Father's Name]'s Carpentry. All rights reserved.</p>
-            <p>Dummy Contact: (555) 123-4567 | dummy.email@carpentry.com</p>
+            <p>&copy; 2025 Heritage Woodcraft. All rights reserved.</p>
+            <p>Main Office: 123 Wood Street, Craftsville, State, 12345 | General Enquiries: (555) 123-4567 | info@heritagewoodcraft.com</p>
         </div>
     </footer>
 
@@ -501,7 +552,7 @@
             <h3 id="modal-title">Get a Quote</h3>
             <p id="modal-contact">Contact details here...</p>
             <p id="modal-warranty">Warranty info here...</p>
-            <p><em>Please mention the service you are interested in when you call.</em></p>
+            <p><em>Please mention the service you are interested in when you contact us.</em></p>
         </div>
     </div>
 
@@ -559,7 +610,8 @@
                 // Prevent the form from actually submitting (which reloads the page)
                 event.preventDefault();
 
-                // Show a success message
+                // In a real scenario, you would send this data to a server using fetch() or XMLHttpRequest
+                // For now, we'll just show an alert
                 alert('Thank you for your request! We will review your requirements and get back to you with an estimate soon.');
 
                 // Clear the form
